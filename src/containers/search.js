@@ -32,7 +32,12 @@ class Search extends Component {
     return (
       <div className="main_search">
         <form onSubmit={this.searchCars}>
-          <input type="text" value={this.state.keyword} onChange={this.handleChange}/>
+          <input
+            type="text"
+            placeholder="Type a car brand"
+            value={this.state.keyword}
+            onChange={this.handleChange}
+          />
         </form>
       </div>
     );
